@@ -1,27 +1,32 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import './Navbar.css'; // Import the new CSS file
-
-import Explore from './pages/Explore';
-import Search from './pages/Search';
-import New from './pages/New';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import "./Navbar.css"; 
+import Explore from "./pages/Explore";
+import Search from "./pages/Search";
+import New from "./pages/New";
+import About from "./pages/About"; 
 
 function App() {
   return (
     <BrowserRouter>
-      {/* Updated Nav with CSS classes */}
       <nav className="navbar">
-        <Link to="/" className="nav-link">Explore</Link>
-        <Link to="/search" className="nav-link">Search</Link>
-        <Link to="/new" className="nav-link">New</Link>
+        <Link to="/" className="nav-link">Home</Link>
+        <Link to="/search" className="nav-link">Search Movies</Link>
+        <Link to="/new" className="nav-link">New Releases</Link>
+        <Link to="/about" className="nav-link">About Us</Link>
       </nav>
 
-      <div style={{ padding: '2rem' }}>
+      <main className="container" style={{ minHeight: "80vh" }}>
         <Routes>
           <Route path="/" element={<Explore />} />
           <Route path="/search" element={<Search />} />
           <Route path="/new" element={<New />} />
+          <Route path="/about" element={<About />} />
         </Routes>
-      </div>
+      </main>
+
+      <footer className="footer">
+        <p>Stream Search © 2025. Data provided by <a href="https://www.themoviedb.org/" target="_blank">TMDB</a>.</p>
+      </footer>
     </BrowserRouter>
   );
 }
