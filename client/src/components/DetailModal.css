@@ -1,0 +1,65 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #000;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.modal-body {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+}
+
+.modal-poster-container img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.modal-logo {
+  max-height: 80px;
+  margin-bottom: 20px;
+}
+
+.trailer-btn {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 10;
+}

@@ -1,0 +1,19 @@
+/* src/Navbar.css */
+.navbar {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: #007bff; /* Blue on hover */
+}

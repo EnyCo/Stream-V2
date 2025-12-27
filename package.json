@@ -1,0 +1,24 @@
+{
+  "name": "stream-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix server\" \"npm run dev --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnyCo/Stream-V2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/EnyCo/Stream-V2/issues"
+  },
+  "homepage": "https://github.com/EnyCo/Stream-V2#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
